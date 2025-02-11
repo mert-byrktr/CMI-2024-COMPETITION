@@ -34,7 +34,7 @@ One major challenge is handling missing data, as many measures are absent for mo
 
 #### **Optimization Techniques:**
 - **Quadratic Weighted Kappa (QWK) optimization:**
-  - Implemented threshold tuning using [QWK metric optimization](https://www.kaggle.com/code/carlolepelaars/efficientnetb5-with-keras-aptos-2019#Metric-(Quadratic-Weighted-Kappa)-).
+  - Implemented threshold tuning using [QWK metric optimization](https://www.kaggle.com/code/carlolepelaars/efficientnetb5-with-keras-aptos-2019#Metric-(Quadratic-Weighted-Kappa)-) and Gunees Notebook](https://www.kaggle.com/competitions/child-mind-institute-problematic-internet-use/discussion/551533)
   - Since we are dealing with threshold optimization for the weighted QWK model, it was important to find a good starting point for the **Nelder-Mead optimizer**. Different heuristics were evaluated for that.
   - Instead of initializing thresholds statically as `[0.5, 1.5, 2.5]` like in public notebooks, I dynamically initialized them using the following approach in my training pipeline:
     ```python
