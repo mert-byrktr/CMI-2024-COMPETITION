@@ -2,6 +2,9 @@
 
 ## Overview
 
+- **CMI.ipynb** file include the t-test and p-value calculation.
+- **cmi-cv-0-46-lb-0-45.ipynb** file include the modelling and EDA.
+
 This repository contains my approach to a Kaggle competition where the goal was to predict a participant's **Severity Impairment Index (SII)** based on physical activity and internet usage behavior data. The dataset originates from the **Healthy Brain Network (HBN)** study, which aims to find biological markers for diagnosing and treating mental health and learning disorders.
 
 The competition data consists of:
