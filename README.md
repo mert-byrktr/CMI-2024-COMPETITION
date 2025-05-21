@@ -37,7 +37,7 @@ One major challenge is handling missing data, as many measures are absent for mo
 
 #### **Optimization Techniques:**
 - **Quadratic Weighted Kappa (QWK) optimization:**
-  - Implemented threshold tuning using [QWK metric optimization](https://www.kaggle.com/code/carlolepelaars/efficientnetb5-with-keras-aptos-2019#Metric-(Quadratic-Weighted-Kappa)-).
+  - Implemented threshold tuning using [QWK metric optimization](https://www.kaggle.com/code/carlolepelaars/efficientnetb5-with-keras-aptos-2019#Metric-(Quadratic-Weighted-Kappa)-) and [Gunes Notebook](https://www.kaggle.com/competitions/child-mind-institute-problematic-internet-use/discussion/551533)
   - Since we are dealing with threshold optimization for the weighted QWK model, it was important to find a good starting point for the **Nelder-Mead optimizer**. Different heuristics were evaluated for that.
   - Instead of initializing thresholds statically as `[0.5, 1.5, 2.5]` like in public notebooks, I dynamically initialized them using the following approach in my training pipeline:
     ```python
@@ -87,20 +87,3 @@ One major challenge is handling missing data, as many measures are absent for mo
 - Achieved significant improvement in SII predictions using QWK optimization.
 - Best model blend: **85% LGBM + 15% CatBoost**.
 - Final submission outperformed baseline models.
-
-## Conclusion
-
-Competing against top **Kaggle data scientists**, including the **NVIDIA team**, was a fantastic experience. The competition provided deep insights into **time series modeling, missing data handling, and ensemble learning techniques**.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Author
-
-Developed by [Your Name]
-
-## Contact
-
-For discussions or improvements, feel free to reach out!
-
